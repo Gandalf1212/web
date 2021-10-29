@@ -9,31 +9,89 @@ body {
   line-height: normal;
   color: #F5FCFF;
   background-color: #9C4877;
-  padding: 20px;
+  padding: 0px;
+  margin: 0;
 }
 
-h1{
+div{
+  margin: 0px 20px;
+}
+
+div.succes {
+  margin: 0;
+  padding: 0px 20px;
+  text-align: center;
+  background-color: #F5FCFF;
+  color: #1C1C1C;
+}
+
+
+div.image1 {
   text-align: center;
 }
 
-h2 {
-  padding: 20px;
-}
-
-ul {
-  margin: 10px;
-}
-
-li {
-  padding-left: 5px;
-}
-
-img {
+div.image1 img {
   box-shadow: 0 0 5px 2px red;
+  display: inline;
+  -align: center;
 }
 
-.success {
+div.succes section strong {
+  text-transform: uppercase;
+}
+
+div.header h1{
+  text-align: center;
+}
+
+div.header h2 {
+  text-align: center;
+}
+
+nav {
+  margin: 40px 0px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+  padding: 10px;
+/*  background-color: red;*/
+}
+
+nav ul li a{
+  color: #F5FCFF;
+}
+
+nav ul li a:hover {
+  color: #FFF4A5;
+  font-weight: bold;
+}
+
+div.foooter section {
+  text-align: center;
+}
+
+
+table td{
+  border: 1px solid #F5FCFF;
+  padding: 5px;
+  margin: 0;
+}
+
+table th{
+  border: 1px solid #F5FCFF;
+  padding: 5px;
+  margin: 0;
+}
+
+
+table td:nth-child(even){
   background-color: #F5FCFF;
   color: #1C1C1C;
-  padding: 0px;
+  border: 1px solid #F5FCFF;
 }

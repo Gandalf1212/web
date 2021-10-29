@@ -11,47 +11,61 @@
 
 <body>
   <header>
-    <h1>Рыбаков Артем Сергеевич</h1>
-    <h2>Студент ИТМО</h2>
-    <nav>
-      <ul>
-        <li>Веб разработка</li>
-        <li>Бухгалтерский учет</li>
-        <li>Бизнес аналитика</li>
-      </ul>
-    </nav>
+    <div class="header">
+      <h1>Рыбаков Артем Сергеевич</h1>
+      <h2>Студент ИТМО</h2>
+      <nav>
+        <ul>
+          <li><a href="https://naklejki-na-avto.ru/images/product/l/2347607fb.png" target="_blank">Веб разработка</a></li>
+          <li><a href="https://naklejki-na-avto.ru/images/product/l/2347607fb.png" target="_blank">Бухгалтерский учет</a></li>
+          <li><a href="https://naklejki-na-avto.ru/images/product/l/2347607fb.png" target="_blank">Бизнес аналитика</a></li>
+        </ul>
+      </nav>
+  </div>
+
   </header>
 
 
   <main>
-    <aside class="">
-      <ul>
-        <li>Биография</li>
-        <li>Достижения</li>
-        <li>Формула успеха</li>
-        <li>Строчки гениальности</li>
-        <li>Контакты</li>
-      </ul>
-    </aside>
+  <!-- <div class="main1">
+      <aside class="">
+        <ul>
+          <li>Биография</li>
+          <li>Достижения</li>
+          <li>Формула успеха</li>
+          <li>Строчки гениальности</li>
+          <li>Контакты</li>
+        </ul>
+      </aside>
+    </div>
+-->
+    <div class="main2">
+      <article class="">
+        <section>
+          <h3>Биография</h3>
+          <p>в 2019 году поступил в университет ИТМО и с этого началсь моя карьера студента</p>
+          <div class="image1">
+            <img src="img/IMG_20210511_215455.png" alt="ME" width="200" height="340">
+          </div>
+        </section>
+        <section>
+          <h3>Достижения</h3>
+          <p>Закончил <b>2ой</b> курс</p>
+        </section>
+      </div>
 
-    <article class="">
-      <section>
-        <h3>Биография</h3>
-        <p>в 2019 году поступил в университет ИТМО и с этого началсь моя карьера студента</p>
-        <img src="IMG_20210511_215455.png" alt="ME" width="200" height="340">
-      </section>
-      <section>
-        <h3>Достижения</h3>
-        <p>Закончил <b>2ой</b> курс</p>
-      </section>
-      <div class="success">
+      <div class="succes">
+      <section class="success">
         <h3>Формула успеха</h3>
         <p>И конечно же самое главное - это формула успеха. И вот ее секрет: </p>
         <strong>успех это ты</strong>
         <blockquote> "Не ищите злой умысел там, где все можно объяснить глупостью."
         <cite> <br> Наполеон Бонапарт</cite>
         </blockquote>
-      </div>
+      </section>
+    </div>
+
+    <div class="main3">
       <section>
         <h3>Строчки гениальности</h3>
         <pre>
@@ -82,12 +96,61 @@
         </pre>
       </section>
     </article>
+    <section class="table">
+      <h3>Наши дисциплины в 1ом семестре</h3>
+      <table>
+        <tr>
+          <th>Дисциплина</th>
+          <th>Кол-во часов</th>
+          <th>Объем ЗЕ</th>
+          <th>Вид контроля</th>
+        </tr>
+        <tr>
+          <td>Архитектура ЭВМ</td>
+          <td>108</td>
+          <td>3</td>
+          <td>Зачет	</td>
+        </tr>
+        <tr>
+            <td>Введение в цифровую культуру и программирование</td>
+            <td>108</td>
+            <td>3</td>
+            <td>Зачет</td>
+        </tr>
+        <tr>
+          <td>Программирование	</td>
+          <td>144</td>
+          <td>4</td>
+          <td>Зачет</td>
+        </tr>
+        <tr>
+          <td>Иностранный язык</td>
+          <td>108</td>
+          <td>3</td>
+          <td>Зачет	</td>
+        </tr>
+        <tr>
+          <td>Физическая культура</td>
+          <td>36</td>
+          <td>1</td>
+          <td>Зачет	</td>
+        </tr>
+        <tr>
+          <td>Дискретная математика</td>
+          <td>108</td>
+          <td>3</td>
+          <td>Экзамен</td>
+        </tr>
+      </table>
+  </div>
   </main>
 
   <footer>
+  <div class="foooter">
     <section>
       <h3>Контакты</h3>
-      <p><a href="https://vk.com/id224030293">Vk </a></p>
+      <a href="https://www.instagram.com/fishkille/" target="_blank"><img src="img/instagram-new--v2.png" alt="instagram" width="55" height="55"></a>
+      <a href="https://vk.com/id224030293" target="_blank"><img src="img/vk-messenger.png" alt="VK" width="50" height="50"></a>
       <pre>
   _ __   ___    ___ _ __ ___   ___ | | _(_)_ __   __ _
  | '_ \ / _ \  / __| '_ ` _ \ / _ \| |/ / | '_ \ / _` |
@@ -95,5 +158,6 @@
  |_| |_|\___/  |___/_| |_| |_|\___/|_|\_\_|_| |_|\__, |
                                                  |___/</pre>
     </section>
+  </div>
   </footer>
 </body>
