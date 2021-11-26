@@ -57,10 +57,9 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-flex;
   margin-left: 40px;
   padding: 10px;
-/*  background-color: red;*/
 }
 
 nav ul li a{
@@ -77,21 +76,44 @@ div.foooter section {
 }
 
 
-table td{
+table {
+  padding: 5px;
+  margin: 0;
+  overflow: auto;
+  width:90%;
+}
+
+td {
   border: 1px solid #F5FCFF;
   padding: 5px;
   margin: 0;
   overflow: auto;
 }
 
-table th{
+th {
+  border: 1px solid #F5FCFF;
+  padding: 5px;
+}
+
+td {
+
+}
+
+section.table table td{
+  border: 1px solid #F5FCFF;
+  padding: 5px;
+  margin: 0;
+  overflow: auto;
+}
+
+section.tabletable th{
   border: 1px solid #F5FCFF;
   padding: 5px;
   margin: 0;
 }
 
 
-table td:nth-child(even){
+section.table table td:nth-child(even){
   background-color: #F5FCFF;
   color: #1C1C1C;
   border: 1px solid #F5FCFF;
@@ -125,4 +147,58 @@ section.buisnessContent ol{
 }
 section.buisnessContent ol li {
   padding: 7px;
+}
+
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+@media (max-width: 424px) {
+  .foooter pre {
+    display: none;
+  }
+
+  .header li {
+    margin: 0;
+  }
+
+  .header ul {
+    padding: 0;
+  }
+
+  .header nav {
+    padding: 0;
+    width: 100%;
+  }
+
+  table{
+    display: none;
+  }
+
+  .table h3{
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+    color: #F201FF;
+    background-color: #000000;
+  }
+
+  .main3 pre {
+    display: block;
+    overflow: auto;
+  }
+  .header li {
+    margin: 0;
+  }
+
+  .header li a {
+    margin: 0;
+  }
 }
