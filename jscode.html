@@ -11,69 +11,26 @@
 </head>
 
 <body>
-  <header>
+  <header class="jscode">
   <h1>HERE you can create your own table</h1>
   </header>
   <main>
-    <div class="">
+    <div class="inputDiv">
       <form action="#" method="#" id="createT">
-        <input type="number" name="lines" value="" placeholder="lines" class="lines" id="lines">
-        <input type="number" name="column" value="" placeholder="column" class="columns" id="columns">
-        <button type="button" name="button" class="button">Создать</button>
-      </form>
-
-      <form action="#" method="#" id="fillTable">
-        <input type="number" name="lines" value="" placeholder="fill" class="lines" id="lines">
-        <button type="button" name="button" class="button">Заполнить</button>
+        <input type="number" name="lines" value="" placeholder="lines" class="lines" id="lines" min="2" max="8">
+        <input type="number" name="column" value="" placeholder="column" class="columns" id="columns" min="1" max="4">
+        <button type="button" name="button" class="buttonCreate">Создать</button>
+        <button type="button" name="button" class="buttonDelete">Удалить</button>
       </form>
       </div>
+      <div class="containerTables">
         <div class="paragraphes" id="paragraphes">
-
         </div>
+      </div>
+
+
+
       <script>
-      function createTable(l, c, p) {
-        /*
-        let th = document.createElement('tr');
-        let tr = document.createElement('th');
-        let td = document.createElement('td');
-        */
-        var table = document.createElement('table');
-        var thead = document.createElement('thead');
-        var tbody = document.createElement('tbody');
-
-
-        table.appendChild(thead);
-        for (let i = 0; i < c; i++){
-          thead.appendChild(document.createElement('th'));
-        }
-
-        table.appendChild(tbody);
-          for (let i = 0; i < (l-1); i++){
-          let tr = document.createElement('tr');
-          for (let j = 0; j < c; j++){
-            tr.appendChild(document.createElement('td'));
-          }
-          tbody.appendChild(tr);
-        }
-
-
-        p.appendChild(table);
-      }
-
-
-      function getValue(){
-        let lines = document.querySelector('.lines');
-        let columns = document.querySelector('.columns');
-        let p = document.querySelector('.paragraphes');
-        if (lines != 0) {
-          createTable(lines.value, columns.value, p);
-        }else{
-          alert('Lines must not be null!')
-        }
-
-      }
-
-      document.querySelector('.button').addEventListener('click', getValue);
 
       </script>
 

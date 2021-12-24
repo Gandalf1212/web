@@ -6,7 +6,8 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>Визитная карточка</title>
 <link href="style.css" rel="stylesheet">
-<script src="js/code.js"></script>
+<script src="js/time.js"></script>
+<script src="js/navigation.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -18,9 +19,10 @@
       <h2>Студент ИТМО</h2>
       <nav>
         <ul>
-          <li><a href="web.html">Веб разработка</a></li>
-          <li><a href="buhuchet.html">Бухгалтерский учет</a></li>
-          <li><a href="buisnessAnalytic.html" >Бизнес аналитика</a></li>
+          <li><a href="web.html" id="navigationLink">Веб разработка</a></li>
+          <li><a href="buhuchet.html" id="navigationLink">Бухгалтерский учет</a></li>
+          <li><a href="buisnessAnalytic.html" id="navigationLink">Бизнес аналитика</a></li>
+          <li><a href="gallery.html" id="navigationLink">Галерея</a></li>
         </ul>
       </nav>
   </div>
@@ -147,6 +149,54 @@
         </tr>
       </table>
   </div>
+
+  <div class="photo">
+    <h2>Dream Team</h2>
+    <section>
+      <div class="photoRow1">
+        <div class="photoItem">
+          <figure>
+            <img src="photo/oldman.jpg" alt="" width="300" height="400">
+            <figcaption>Никита Александрович</figcaption>
+          </figure>
+
+          <h3></h3>
+        </div>
+        <div class="photoItem">
+          <figure>
+            <img src="photo/sergeich.jpg" alt="" width="300" height="400">
+            <figcaption>Дмитрий Сергеевич</figcaption>
+          </figure>
+        </div>
+        <div class="photoItem">
+          <figure>
+            <img src="photo/zhannarui.jpg" alt="" width="300" height="400">
+            <figcaption>Жанна Руй</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="photoRow2">
+          <div class="photoItem">
+            <figure>
+              <img src="photo/me.jpg" alt="" width="532" height="399">
+              <figcaption>Артем Сергеевич</figcaption>
+            </figure>
+          </div>
+          <div class="photoItem">
+            <figure>
+              <img src="photo/timofey.jpg" alt="" width="197" height="400">
+              <figcaption>Тимофей Евгеньевич</figcaption>
+            </figure>
+          </div>
+          <div class="photoItem">
+            <figure>
+              <img src="photo/nikitos.jpg" alt="" width="190" height="400">
+              <figcaption>Никитос</figcaption>
+            </figure>
+          </div>
+      </div>
+    </section>
+  </div>
   </main>
 
   <footer>
@@ -162,6 +212,7 @@
  |_| |_|\___/  |___/_| |_| |_|\___/|_|\_\_|_| |_|\__, |
                                                  |___/</pre>
     </section>
+    <p id="timeLoading">Time loading</p>
   </div>
   </footer>
 </body>

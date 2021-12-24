@@ -66,9 +66,13 @@ nav ul li a{
   color: #F5FCFF;
 }
 
-nav ul li a:hover {
+ nav ul li a:hover {
   color: #FFF4A5;
   font-weight: bold;
+}
+
+.navHover {
+  color: #FFF4A5;
 }
 
 div.foooter section {
@@ -201,4 +205,147 @@ footer {
   .header li a {
     margin: 0;
   }
+
+}
+
+@media (max-width: 950px) {
+  .photoRow1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photoRow2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figcaption{
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+.photo {
+  text-align: center;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.photo h2 {
+  font-size: 2em;
+}
+
+.photoRow1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photoRow1 img {
+  margin: 0px;
+  border: 3px solid #1C1C1C;
+}
+
+.photoRow2 img {
+  margin: 0px;
+  border: 3px solid #1C1C1C;
+}
+
+.photoRow2 {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.photoItem {
+  display: flex;
+  margin: 0;
+}
+
+.jscode h1 {
+  text-align: center;
+}
+
+.paragraphes {
+  margin-top: 40px;
+}
+
+.paragraphes input{
+  margin: 0px 40px;
+
+}
+.paragraphes table {
+  overflow: scroll;
+}
+
+.paragraphes table tr {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.inputDiv input {
+  width: 100px;
+  height: 15px;
+}
+
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.done {
+    opacity: 0;
+    background-color: red;
+    visibility: hidden;
+  }
+
+
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: yellow;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s spin infinite linear;
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
