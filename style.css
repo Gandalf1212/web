@@ -361,11 +361,5 @@ figure {
 .flexGallery {
   width: 300px;
   height: 400px;
-  text-align: center;
-  margin: 0 40%;
-}
-
-.flexslider{
-  display: flex;
-  align-items: center;
+  margin: 0 37%;
 }
