@@ -1,5 +1,8 @@
 var tables = new Array();
 var numbersID = 0;
+
+
+
 function createTable(l, c, p) {
 
   var table = document.createElement('table');
@@ -40,11 +43,6 @@ function getValue(){
   let lines = document.querySelector('.lines');
   let columns = document.querySelector('.columns');
   let p = document.querySelector('.paragraphes');
-  let lp = [lines.value, columns.value];
-
-  tables.push(lp);
-  window.localStorage.setItem('wasCreated', 1);
-  window.localStorage.setItem('createdTables', JSON.stringify(tables));
 
   if (lines.value < 1) {
     alert('Min lines is 1!')
@@ -55,9 +53,15 @@ function getValue(){
     columns.value = 1;
   }
   if (columns.value > 4) {
-    alert('Max Column is 4!')
+    alert('Max Column is 4!');
     columns.value = 4;
   }
+
+  let lp = [lines.value, columns.value];
+  tables.push(lp);
+
+  window.localStorage.setItem('wasCreated', 1);
+  window.localStorage.setItem('createdTables', JSON.stringify(tables));
 
   createTable(lines.value, columns.value, p);
   /*document.querySelectorAll('input').forEach(function(e) {
@@ -100,7 +104,12 @@ window.onload = function() {
     loadTable();
   }
 
-  document.querySelector('.buttonCreate').addEventListener('click', getValue);
+  let form = document.getElementById('createT');
+  form.addEventListener('submit', function(){
+    getValue();
+  });
+
+  //document.querySelector('.buttonCreate').addEventListener('click', getValue);
   document.querySelector('.buttonDelete').addEventListener('click', deleteTable);
 
 }

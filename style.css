@@ -349,3 +349,23 @@ figure {
       transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+
+.containerGal {
+  max-width: 1200px;
+  /* margin: 0 auto;
+  text-align: center; */
+  margin-bottom: 50px;
+}
+
+.flexGallery {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  margin: 0 43%;
+}
+
+.flexslider{
+  display: flex;
+  align-items: center;
+}

@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
          })
 
          .then((json) => {
-           json.forEach((item) => {
+           json.filter(pct => Math.random() * 100 + 1 < pct.id && pct.id < Math.random() * 100 + 102).forEach((item) => {
                var pictere = document.createElement("img");
                pictere.src = item.url;
                pictere.style.width = "150px";
